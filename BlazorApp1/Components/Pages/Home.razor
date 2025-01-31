@@ -1,0 +1,21 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1> 
+
+<button @onclick= "Buttonclick"> Click me!</button>  
+<span>@text</span>
+
+Welcome to your new app. 
+
+@code {
+
+	string text = string.Empty; 
+	void Buttonclick () { 
+
+		 this.text = "Button has been clicked!" ; 
+	}
+
+}
